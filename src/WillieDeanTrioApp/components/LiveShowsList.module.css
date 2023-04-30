@@ -1,0 +1,121 @@
+.liveShowsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.liveShowsList_Title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.item {
+  margin: 1rem 0;
+  transition: all 0.3s ease-in-out;
+  border: 0px solid #57371c;
+  border-width: 0px 0px 3px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.item_col1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.item_col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  padding: 0 3rem;
+}
+
+.item_col3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item_date {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.item_extraInfo {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.item_venue {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item_location {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.item_ticketBtn {
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  background-color: #57371c;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border: 3px solid #57371c;
+}
+
+.item_ticketBtn:hover {
+  background-color: #fff;
+  color: #57371c;
+}
+
+.item_ticketBtnAnchor {
+  text-decoration: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .item {
+    flex-direction: column;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .item {
+    flex-direction: column;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .item {
+    flex-direction: row;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .item {
+    flex-direction: row;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .item {
+    flex-direction: row;
+  }
+}

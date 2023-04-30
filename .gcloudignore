@@ -1,0 +1,12 @@
+.gcloudignore
+
+public/
+src/
+node_modules/
+
+.gitignore
+package.json
+package-lock.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts

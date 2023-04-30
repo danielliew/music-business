@@ -1,0 +1,168 @@
+.app {
+  background-color: #fff;
+}
+
+.topPane {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainLogoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.mainLogo {
+  width: 96%;
+}
+
+.socialLogo {
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+}
+
+.socialLogo:hover {
+  opacity: 0.6;
+}
+
+.fbLogo {
+  font-size: 1.5rem;
+}
+
+.igLogo {
+  font-size: 1.5rem;
+}
+
+.ytLogo {
+  font-size: 1.5rem;
+}
+
+.tkLogo {
+  font-size: 1.5rem;
+}
+
+.merchLogo {
+  font-size: 1.5rem;
+}
+
+.mainCoverContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.mainCover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout {
+  max-width: 888px;
+  padding: 1rem 2rem;
+}
+
+.toggleBtn {
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.toggleBtn:hover {
+  opacity: 0.6;
+}
+
+.whatsNextItem {
+  outline: none;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.2rem;
+  font-weight: 300;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.whatsNextItem:hover {
+  opacity: 0.6;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .topPane {
+    flex-direction: column;
+  }
+  .mainLogoContainer {
+    width: 100%;
+    height: 70vh;
+  }
+  .mainCoverContainer {
+    width: 100%;
+    height: 40vh;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .topPane {
+    flex-direction: column;
+  }
+  .mainLogoContainer {
+    width: 100%;
+    height: 70vh;
+  }
+  .mainCoverContainer {
+    width: 100%;
+    height: 40vh;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .topPane {
+    flex-direction: row;
+  }
+  .mainLogoContainer,
+  .mainCoverContainer {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .topPane {
+    flex-direction: row;
+  }
+  .mainLogoContainer,
+  .mainCoverContainer {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .topPane {
+    flex-direction: row;
+  }
+  .mainLogoContainer,
+  .mainCoverContainer {
+    width: 100%;
+    height: 100vh;
+  }
+}

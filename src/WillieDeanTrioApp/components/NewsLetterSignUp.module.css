@@ -1,0 +1,102 @@
+.newsLetterSignUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+.newsLetterSignUp_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newsLetterSignUp_form {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.newsLetterSignUp_formInput {
+  outline: none;
+  border: 0px solid #57371c;
+  border-width: 0px 0px 3px 0px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.newsLetterSignUp_formInput:focus {
+  padding: 1rem 0.5rem;
+}
+
+.newsLetterSignUp_formInputSubmit {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 3px solid #57371c;
+  background-color: #57371c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 0.5rem;
+}
+
+.newsLetterSignUp_formInputSubmit:hover {
+  background-color: #fff;
+  color: #57371c;
+}
+
+.newsLetterSignUp_formInputBtn {
+  font-size: 1.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  background-color: #57371c;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border: 3px solid #57371c;
+}
+
+.newsLetterSignUp_formInputBtn:hover {
+  background-color: #fff;
+  color: #57371c;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .newsLetterSignUp_title {
+    font-size: 1.5rem;
+  }
+  .newsLetterSignUp_formInput {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .newsLetterSignUp_title {
+    font-size: 1.5rem;
+  }
+  .newsLetterSignUp_formInput {
+    width: 100%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .newsLetterSignUp_title {
+    font-size: 2.5rem;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .newsLetterSignUp_title {
+    font-size: 2.5rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .newsLetterSignUp_title {
+    font-size: 2.5rem;
+  }
+}
