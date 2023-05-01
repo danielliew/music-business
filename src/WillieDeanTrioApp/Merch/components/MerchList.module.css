@@ -1,0 +1,77 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.merchItem {
+  width: 100%;
+  height: 100%;
+}
+
+.merchItem_image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.merchItem_image:hover {
+  opacity: 0.8;
+}
+
+.merchItem_detailsContainer {
+  padding: 1rem;
+}
+
+.merchItem_name {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.merchItem_name:hover {
+  text-decoration: underline;
+}
+
+.merchItem_price {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}

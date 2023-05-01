@@ -232,7 +232,7 @@ function Home() {
           </div>
           <div>
             <Link
-              to={youtubeUrl}
+              to={merchUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.whatsNextItem}
