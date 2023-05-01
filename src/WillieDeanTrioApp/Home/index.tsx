@@ -255,7 +255,7 @@ function Home() {
 
       <section className={styles.layoutContainer}>
         <div className={styles.layout}>
-          © 2023 Willie Dean. All Rights Reserved. | Built by dliew
+          © 2023 Willie Dean Trio. All Rights Reserved. | Built by dliew
         </div>
       </section>
     </div>
