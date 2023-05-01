@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./PlaybackList.module.css";
+import { Link } from "react-router-dom";
 
 interface PlaybackItemProps {
   id: string;
@@ -27,13 +28,18 @@ function PlaybackItem({
   return (
     <div className={styles.item}>
       <div className={styles.itemCoverArt}>
-        <a href={url} target="_blank" rel="noopener noreferrer" className={styles.itemCoverArtAnchor}>
+        <Link
+          to={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.itemCoverArtAnchor}
+        >
           <img
             className={styles.itemCoverArtImage}
             src={coverArtUrl}
             alt="cover art"
           />
-        </a>
+        </Link>
       </div>
       <div className={styles.itemDetailsContainer}>
         <span className={styles.itemDetail_Year}>{year}</span>

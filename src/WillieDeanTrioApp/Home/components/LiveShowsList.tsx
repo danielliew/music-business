@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./LiveShowsList.module.css";
 
 interface LiveShowProps {
@@ -21,14 +22,14 @@ const LiveShow = ({ date, venue, location, ticketUrl,extraInfo }: LiveShowProps)
         <div className={styles.item_location}>{location}</div>
       </div>
       <div className={styles.item_col3}>
-        <a
-          href={ticketUrl}
+        <Link
+          to={ticketUrl}
           target="_blank"
           rel="noopener noreferrer"
           className={styles.item_ticketBtnAnchor}
         >
           <div className={styles.item_ticketBtn}>Tickets</div>
-        </a>
+        </Link>
       </div>
     </div>
   );
