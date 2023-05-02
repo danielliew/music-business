@@ -14,6 +14,8 @@ export const spotifyUrl = "https://open.spotify.com/album/5Z3Z1ZQ4ZQZQZQZQZQZQZQ
 
 export const stripeTipUrl = "https://buy.stripe.com/test_eVa0125DIeRs5P2bII";
 
+export const patreonUrl ='https://www.patreon.com/WillieDeanTrio/membership'
+
 export const merchUrl = '/merch'
 
 export const playbackItems = [

@@ -21,9 +21,11 @@ import {
   youtubeUrl,
   tiktokUrl,
   facebookUrl,
-  merchUrl
+  merchUrl,
+  patreonUrl,
 } from "../WillieDeanTrioApp.constants";
 import { Link } from "react-router-dom";
+import { RiPatreonFill } from "react-icons/ri";
 
 function Home() {
   const [readmore, setReadmore] = useState(false);
@@ -183,7 +185,7 @@ function Home() {
               extraInfo: "With special guest The Groove Orient",
             },
             {
-              id: "1",
+              id: "2",
               date: "Sep 29, 2023",
               venue: "Will's Pub",
               location: "Orlando, FL",
@@ -191,10 +193,17 @@ function Home() {
               extraInfo: "18+ after 02:00 AM",
             },
             {
-              id: "1",
+              id: "3",
               date: "Oct 5, 2023",
               venue: "House of Blues",
               location: "Orlando, FL",
+              ticketUrl: "https://www.ticketmaster.com/",
+            },
+            {
+              id: "4",
+              date: "Fox Day 2024",
+              venue: "Mill's Lawn, Rollins College",
+              location: "Winter Park, FL",
               ticketUrl: "https://www.ticketmaster.com/",
             },
           ]}
@@ -217,7 +226,7 @@ function Home() {
               rel="noopener noreferrer"
               className={styles.whatsNextItem}
             >
-              <span>🎧 Listen to more of Willie Dean Trio's music!</span>
+              <span>🎧 Listen to more of Willie Dean Trio's discography</span>
             </Link>
           </div>
           <div>
@@ -238,6 +247,19 @@ function Home() {
               className={styles.whatsNextItem}
             >
               <span>🛍 Shop some merch</span>
+            </Link>
+          </div>
+          <div>
+            <Link
+              to={patreonUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsNextItem}
+            >
+              <span>
+                <RiPatreonFill /> Explore exclusive Willie Dean Trio Patreon
+                Memberships
+              </span>
             </Link>
           </div>
           <div>
